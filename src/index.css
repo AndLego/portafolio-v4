@@ -1,0 +1,41 @@
+::root {
+  --principal: #070C1F;
+  /*#0A192F*/
+  --resaltar: #336699;
+  /*#4D648D */
+  --texto: #E2E8F0;
+  /*#C9D1D9*/
+  --fondo_seccion: #1C2331;
+  /*#212F45 */
+  --contraste: #FFFFFF
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Container {
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  color: white;
+  background: url("../public/background2.svg");
+}
+
+.Container::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
