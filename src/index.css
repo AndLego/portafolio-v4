@@ -1,15 +1,18 @@
-::root {
+:root {
   --principal: #070C1F;
-  /*#0A192F*/
   --resaltar: #336699;
-  /*#4D648D */
   --texto: #E2E8F0;
-  /*#C9D1D9*/
   --fondo_seccion: #1C2331;
-  /*#212F45 */
-  --contraste: #FFFFFF
+  --contraste: #FFFFFF;
+  /*FONTS*/
+  --logo: 'Cherry Bomb One', cursive;
+  --default_font: 'Comfortaa', cursive;
 }
 
+/*#0A192F*/
+/*#4D648D */
+/*#C9D1D9*/
+/*#212F45 */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +30,7 @@ html {
   overflow-y: auto;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  color: white;
+  color: var(--contraste);
   background: url("../public/bg_gradient.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,4 +43,5 @@ html {
 section {
   height: 100vh;
   scroll-snap-align: center;
+  padding-top: 60px;
 }

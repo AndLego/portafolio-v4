@@ -5,8 +5,8 @@ import { Navbar } from '..';
 const Hero = () => {
     return (
         <section className={style.hero}>
-            <Navbar />
-
+            {/* <Navbar /> */}
+Hero
         </section>
     );
 }

@@ -1,3 +1,68 @@
-.nav{
-    
+.nav {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.nav div {
+    font-family: var(--default_font);
+
+}
+
+.nav div:first-of-type {
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.nav div:last-of-type {
+    display: flex;
+    gap: 24px;
+}
+
+.nav .logo {
+    font-family: var(--logo);
+    font-size: 2.8rem;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav li {}
+
+.nav a {
+    color: var(--contraste);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav a span{
+    font-size: 1.2rem;
+}
+
+/*ñadir efeto al border al hacer hover--basico sin border*/
+.nav button {
+    border: 1px solid;
+    padding: 8px 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Comfortaa';
+    font-weight: 600;
+    color: var(--contraste);
+    background: transparent;
 }

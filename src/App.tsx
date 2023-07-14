@@ -1,9 +1,10 @@
-import { Contact, Hero, Who, Works } from './components/'
+import { Contact, Hero, Navbar, Who, Works } from './components/'
 
 function App() {
 
   return (
     <div className='Container'>
+      <Navbar />
       <Hero />
       <Who />
       <Works />
