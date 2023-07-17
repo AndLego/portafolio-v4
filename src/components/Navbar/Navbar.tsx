@@ -6,8 +6,11 @@ import style from "./Navbar.module.css"
 const Navbar = () => {
     return (
         <nav className={style.nav}>
-            <div>
-                <span className={style.logo}>AndLego</span>
+            <div className={style.logo_list}>
+                <div className={style.logo_container}>
+                    <span className={style.logo}>AndLego</span>
+                    <span>the developer</span>
+                </div>
                 <ul>
                     <li>Home</li>
                     <li>Studio</li>
@@ -15,7 +18,7 @@ const Navbar = () => {
                     <li>Contact</li>
                 </ul>
             </div>
-            <div>
+            <div className={style.buttons}>
                 <a href="#">
                     <FiGithub />
                     <span>

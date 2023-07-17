@@ -17,20 +17,33 @@
 
 }
 
-.nav div:first-of-type {
+.nav .logo_list {
     display: flex;
     align-items: flex-end;
     gap: 50px;
 }
 
-.nav div:last-of-type {
+.nav .buttons {
     display: flex;
     gap: 24px;
 }
 
-.nav .logo {
+.nav .logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav .logo_container .logo {
     font-family: var(--logo);
     font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.nav .logo_container span:last-of-type {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
 }
 
 .nav ul {
@@ -49,12 +62,13 @@
     text-decoration: none;
 }
 
-.nav a span{
+.nav a span {
     font-size: 1.2rem;
 }
 
 /*ñadir efeto al border al hacer hover--basico sin border*/
 .nav button {
+    cursor: pointer;
     border: 1px solid;
     padding: 8px 16px;
     border-radius: 4px;
@@ -65,4 +79,10 @@
     font-weight: 600;
     color: var(--contraste);
     background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.nav button:hover {
+    background-color: var(--contraste);
+    color: var(--principal);
 }

@@ -1,6 +1,6 @@
 :root {
   --principal: #070C1F;
-  --resaltar: #336699;
+  --resaltar: #cb18af;
   --texto: #E2E8F0;
   --fondo_seccion: #1C2331;
   --contraste: #FFFFFF;
@@ -10,7 +10,7 @@
 }
 
 /*#0A192F*/
-/*#4D648D */
+/*#336699 -- #4D648D */
 /*#C9D1D9*/
 /*#212F45 */
 * {
@@ -41,7 +41,11 @@ html {
 }
 
 section {
+  font-family: var(--default_font);
   height: 100vh;
   scroll-snap-align: center;
   padding-top: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
 }
