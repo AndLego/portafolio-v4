@@ -12,6 +12,8 @@
 
 .right h1 {
     font-size: 5.4rem;
+    font-family: var(--titles);
+    letter-spacing: 2px;
 }
 
 .right div {

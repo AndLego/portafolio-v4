@@ -4,9 +4,11 @@
   --texto: #E2E8F0;
   --fondo_seccion: #1C2331;
   --contraste: #FFFFFF;
+  --inputs: #e2e8f066;
   /*FONTS*/
   --logo: 'Cherry Bomb One', cursive;
   --default_font: 'Comfortaa', cursive;
+  --titles: 'Roboto', sans-serif;
 }
 
 /*#0A192F*/
