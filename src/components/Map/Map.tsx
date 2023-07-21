@@ -1,10 +1,8 @@
-import React from "react";
 import {
     ComposableMap,
     Geographies,
     Geography,
     Annotation,
-    ZoomableGroup
 } from "react-simple-maps";
 import style from "./Map.module.css"
 
