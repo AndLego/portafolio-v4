@@ -1,5 +1,7 @@
 import React from 'react';
 import style from "./Hero.module.css"
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, MeshDistortMaterial, Sphere } from '@react-three/drei';
 
 const Hero = () => {
     return (
@@ -14,8 +16,19 @@ const Hero = () => {
                 <button>Explore</button>
             </article>
             <article className={style.right}>
-                {/* 3d model */}
-                <img src="/public/Default_comic_slim_android_rusty_colors_with_a_couple_of_grea_0_88916727-a753-4853-9702-1eba1b9b1588_0.png" alt="" />
+                <Canvas>
+                    <OrbitControls enableZoom={false} />
+                    <ambientLight intensity={1} />
+                    <directionalLight position={[-1, 1, 4]} />
+                    <Sphere args={[1, 100, 200]} scale={2.5} >
+                        <MeshDistortMaterial
+                            color={"#2b0546"}
+                            attach="material"
+                            distort={0.5}
+                            speed={2} />
+                    </Sphere>
+                </Canvas>
+                <img src="/public/new_chibi.png" alt="" />
             </article>
         </section>
     );
