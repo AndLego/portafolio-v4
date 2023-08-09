@@ -1,12 +1,20 @@
 import React from 'react';
 import style from "./Who.module.css"
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, Stage } from '@react-three/drei';
+import Robot from "../Robot/Robot.jsx"
 
 const Who = () => {
     return (
         <section className={style.hero}>
             <article className={style.left}>
-                {/* 3d model */}
-                
+                <Canvas>
+                    <Stage adjustCamera={1.8} environment={'city'} intensity={0.6}>
+                        <Robot />
+                    </Stage>
+                    <OrbitControls enableZoom={false} autoRotate />
+                </Canvas>
+
             </article>
             <article className={style.right}>
                 <h1>Creating Awesomeness, Bug-Free Edition</h1>
